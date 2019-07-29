@@ -1,0 +1,13 @@
+# API calls which need special redirection can be placed in this file
+# The following example redirects calls to /var/www/html/throttle.xml
+# This file is called from /etc/httpd/conf.d/opsource.conf
+#
+<LocationMatch "/thisisatestfilter/">
+   RewriteEngine  on
+   RewriteRule (.*) /throttle.xml  [R,L]
+</LocationMatch>
+
+#<LocationMatch "/oec/0.9/a7d279dc-861f-4cc6-abdf-af69e6e72eff/serverWithState">
+#   RewriteEngine  on
+#   RewriteRule (.*) /serverWithStateMock  [R,L]
+#</LocationMatch>

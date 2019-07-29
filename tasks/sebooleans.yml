@@ -1,0 +1,11 @@
+# -----------------------------------------------------------------------------
+# name: sebooleans.yml
+# about: enable the 'httpd_can_network_connect' SELinux boolean to be able to
+# use the mod_proxy modules
+# -----------------------------------------------------------------------------
+---
+- name: enabling SELinux boolean so httpd can proxy
+  seboolean:
+    name: httpd_can_network_connect
+    state: yes
+    persistent: yes

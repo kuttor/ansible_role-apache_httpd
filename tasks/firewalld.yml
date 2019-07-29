@@ -1,0 +1,18 @@
+# -----------------------------------------------------------------------------
+# name: firewalld.yml
+# about: Opens required ports for Apache httpd
+#
+# refs:
+# - http://docs.ansible.com/ansible/latest/modules/firewalld_module.html
+# -----------------------------------------------------------------------------
+---
+
+- name: Setting up firewall rules...
+  firewalld:
+    port: "{{ item }}/tcp"
+    permanent: true
+    immediate: true
+    state: enabled
+  with_items:
+    - 80
+    - 443

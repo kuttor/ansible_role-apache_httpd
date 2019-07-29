@@ -1,0 +1,15 @@
+# -----------------------------------------------------------------------------
+# name: defaults/main.yml
+# about: contains the default variables for the role.
+# -----------------------------------------------------------------------------
+---
+
+httpd_server_root: /etc/httpd
+httpd_port: 80
+httpd_config: httpd.conf
+httpd_config_home: "{{ httpd_server_root }}/conf"
+httpd_module_list: files/module_list
+apache_server_root: /etc/httpd
+apache_document_root: /var/www/html
+api_node: localhost
+virtual_host_address: "{{ api_node }}"

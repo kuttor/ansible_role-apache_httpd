@@ -1,0 +1,19 @@
+# -----------------------------------------------------------------------------
+# name: apache.yml
+# about: install and start the apache httpd package via yum
+# -----------------------------------------------------------------------------
+---
+
+# Install httpd package
+- name: Installing Apache...
+  yum: 
+    name: httpd
+    state: present
+
+# Kick httpd service
+- name: Starting Apache...
+  service:
+    name: httpd
+    state: started
+    enabled: yes
+

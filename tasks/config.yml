@@ -1,0 +1,27 @@
+---
+# -----------------------------------------------------------------------------
+# name: config.yml
+# about: copies the NTT custom configurations to the apache server root
+# -----------------------------------------------------------------------------
+
+- name: Copying cloudcontrol.conf to httpd home...
+  template:
+    src:  httpd.conf.j2
+    dest: "{{ httpd_config_home }}/httpd.conf"
+  notify: Restarting Apache...
+  tags: cloudcontrol.conf
+
+- name: Copying deprecated_api to httpd.conf
+  copy:
+    src:  deprecated_api
+    dest: "{{ httpd_config_home }}"
+  notify: Restarting Apache...
+  tags: deprecated_api
+
+- name: Setting the Apache Port ...
+  lineinfile:
+    dest: /etc/httpd/conf/httpd.conf
+    regexp: "^Listen "
+    insertafter: "^#Listen "
+    line: "Listen {{ httpd_port }}"
+

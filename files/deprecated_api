@@ -1,0 +1,16 @@
+RedirectMatch 404 (?i)^/oec/0.9/.*/image/web$
+RedirectMatch 404 (?i)^/oec/0.9/.*/image/db$
+RedirectMatch 404 (?i)^/oec/0.9/partner/image$
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/image/deployed/.*
+RedirectMatch 404 (?i)^/oec/0.9/base/image/deployedWithSoftwareLabels/.*
+RedirectMatch 404 (?i)^/oec/0.9/base/image/.*
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/image/pendingDeploy/.*
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/image/deployedWithSoftwareLabels/.*
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/image/pendingDeploy$
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/image$
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/network/[a-fA-F0-9-]{36}/server$
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/network/[a-fA-F0-9-]{36}/server/deployedWithSoftwareLabels$
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/network/[a-fA-F0-9-]{36}/server/deployedWithStatus$
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/network/[a-fA-F0-9-]{36}/server/deployedWithDisks$
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/network/[a-fA-F0-9-]{36}/server/pendingDeploy$
+RedirectMatch 404 (?i)^/oec/0.9/[a-fA-F0-9-]{36}/network/[a-fA-F0-9-]{36}/server/pendingDeployWithDisks$

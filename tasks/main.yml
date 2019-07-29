@@ -1,0 +1,20 @@
+# -----------------------------------------------------------------------------
+# name: main.yml
+# about: main task file for the apache httpd role
+# -----------------------------------------------------------------------------
+---
+
+  - name: loading apache.yml task file...
+    include_tasks: apache.yml
+
+  - name: loading config.yml task file...
+    include_tasks: config.yml
+
+  - name: loading modules.yml task file...
+    include_tasks: modules.yml
+
+  - name: loading firewalld.yml task file...
+    include_tasks: firewalld.yml
+
+  - name: loading sebooleans.yml task file...
+    include_tasks: sebooleans.yml

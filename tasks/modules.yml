@@ -1,0 +1,19 @@
+# -----------------------------------------------------------------------------
+# name: modules.yml
+# about: loads apache httpd modules via a dictionary list
+# -----------------------------------------------------------------------------
+---
+
+# Loading the list
+- include_vars:
+    file: vars/module_list.yml
+    name: modules
+
+# Module loader
+- name: Enabling Apache2 modules...
+  apache2_module:
+    state: present
+    name: "{{ item.key }}"
+    identifier: "{{ item.value['id'] }}"
+    ignore_configcheck: True
+  with_dict: "{{ modules }}"   

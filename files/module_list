@@ -1,0 +1,98 @@
+- action: 
+   id: actions_module
+- alias:
+   id: alias_module
+- auth_basic:
+   id: auth_basic_module
+- auth_diest:
+   id: auth_diest__module
+- authn_alias:
+   id: authn_alias_module
+- authn_anon:
+   id: authn_anon_module
+- authn_dbm:
+   id: authn_dbm_module
+- authn_default:
+   id: authn_default__module
+- authn_file:
+   id: authn_file_module
+- authnz_ldap:
+   id: authnz_ldap_module
+- authz_dbm:
+   id: authz_dbm_module
+- authz_default:
+   id: authz_default_module
+- authz_host:
+   id: authz_host_module
+- authz_owner:
+   id: authz_owner_module
+- authz_groupfile:
+   id: authz_groupfile_module
+- authz_user:
+   id: auth_user__module
+- cache:
+   id: cache_module
+- ci:
+   id: ci_module
+- core:
+   id: core_module
+- deflate:
+   id: deflate_module
+- dir:
+   id: dir_module
+- disk_cache:
+   id: disk_cache_module
+- env:
+   id: env_module
+- expires:
+   id: expires_module
+- ext_filter:
+   id: ext_filter_module
+- file_cache:
+   id: file_cache_module
+- headers:
+   id: headers_module
+- http:
+   id: http_module
+- include:
+   id: include_module
+- ldap:
+   id: ldap_module
+- lo_config:
+   id: lo_config_module
+- loio:
+   id: loio_module
+- mem_cache:
+   id: mem_cache_module
+- mime_maic:
+   id: mime_maic_module
+- mime:
+   id: mime_module
+- mpm_prefork:
+   id: mpm_prefork_module
+- neotiation:
+   id: neotation_module
+- php5:
+   id: php5_module
+- proxy_ajp:
+   id: proxy_ajp_module
+- proxy_balancer:
+   id: proxy_balancer_module
+- proxy:
+   id: proxy_module
+- rewrite:
+   id: rewrite_module
+- setenvif:
+   id: setenvif_module
+- so:
+   id: so_module
+- spelin:
+   id: spelin_module
+- suexec:
+   id: suexec_module
+- usertrack:
+   id: usertrack_module
+- version:
+   id: version_module
+- vhost_alias:
+   id: vhost_alias_module
