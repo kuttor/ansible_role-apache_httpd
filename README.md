@@ -1,7 +1,7 @@
 Apache
 =========
 
-Installs and configure Apache for CloudControl
+Installs and configure Apache
 
 Requirements
 ------------
